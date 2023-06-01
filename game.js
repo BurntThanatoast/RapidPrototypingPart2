@@ -55,8 +55,13 @@ class Scene3 extends Phaser.Scene
         let box = this.add.text(10, 10,
 `*Placeholder Scene for Gameplay
 
-Click anywhere to continue...`
+Clicking will act as if you have beat the level.
+Hitting the down key will act as if you lost.`
                 );
+        this.cursors = this.input.keyboard.createCursorKeys();
+        this.input.on('pointerdown', () => {
+            this.scene.start('scene1');
+        });
         this.input.on('pointerdown', () => this.scene.start('scene4'));
     }
 }
@@ -109,8 +114,13 @@ class Scene6 extends Phaser.Scene
         let box = this.add.text(10, 10,
 `*Placeholder Scene for Gameplay
 
-Click anywhere to continue...`
+Clicking will act as if you have beat the level.
+Hitting the down key will act as if you lost.`
                 );
+        this.cursors = this.input.keyboard.createCursorKeys();
+        this.input.on('pointerdown', () => {
+            this.scene.start('scene1');
+        });
         this.input.on('pointerdown', () => this.scene.start('scene7'));
     }
 }
@@ -164,8 +174,13 @@ class Scene9 extends Phaser.Scene
         let box = this.add.text(10, 10,
 `*Placeholder Scene for Gameplay
 
-Click anywhere to continue...`
+Clicking will act as if you have beat the level.
+Hitting the down key will act as if you lost.`
                 );
+        this.cursors = this.input.keyboard.createCursorKeys();
+        this.input.on('pointerdown', () => {
+            this.scene.start('scene1');
+        });
         this.input.on('pointerdown', () => this.scene.start('scene10'));
     }
 }
