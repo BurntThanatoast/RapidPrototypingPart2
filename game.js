@@ -90,12 +90,65 @@ class SceneF extends Phaser.Scene
     }
 }
 
-//END SCREEN
+
 class SceneG extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneF' });
+        super({ key: 'sceneG' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+    }
+}
+
+class SceneH extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneH' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+    }
+}
+
+class SceneI extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneI' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+    }
+}
+
+class SceneJ extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneJ' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+    }
+}
+
+// victory screen
+class SceneK extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneK' });
     }  
 
     create ()
@@ -113,7 +166,7 @@ let config = {
         height: 1080,
     },
 
-    scene: [SceneA, SceneB, SceneC , SceneD, SceneE, SceneF, Scene G],
+    scene: [SceneA, SceneB, SceneC, SceneD, SceneE, SceneF, Scene G, Scene H, Scene I, Scene J, Scene K],
     title: "Prototype",
     physics: {
         default: 'arcade',
