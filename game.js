@@ -100,7 +100,7 @@ class SceneG extends Phaser.Scene
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+        this.input.on('pointerdown', () => this.scene.start('sceneH'));
     }
 }
 
@@ -113,7 +113,7 @@ class SceneH extends Phaser.Scene
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+        this.input.on('pointerdown', () => this.scene.start('sceneI'));
     }
 }
 
@@ -126,7 +126,7 @@ class SceneI extends Phaser.Scene
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+        this.input.on('pointerdown', () => this.scene.start('sceneJ'));
     }
 }
 
@@ -139,7 +139,7 @@ class SceneJ extends Phaser.Scene
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+        this.input.on('pointerdown', () => this.scene.start('sceneK'));
     }
 }
 
@@ -153,7 +153,6 @@ class SceneK extends Phaser.Scene
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneG'));
     }
 }
 
