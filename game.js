@@ -1,4 +1,4 @@
-class SceneA extends Phaser.Scene
+class Scene1 extends Phaser.Scene
 {
     constructor ()
     {
@@ -25,130 +25,130 @@ class SceneA extends Phaser.Scene
     }
 }
 
-class SceneB extends Phaser.Scene
+class Scene2 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneB' });
+        super({ key: 'scene2' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneC'));
+        this.input.on('pointerdown', () => this.scene.start('scene3'));
     }
 }
 
-class SceneC extends Phaser.Scene
+class Scene3 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneC' });
+        super({ key: 'scene3' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneD'));
+        this.input.on('pointerdown', () => this.scene.start('scene4'));
     }
 }
 
-class SceneD extends Phaser.Scene
+class Scene4 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneD' });
+        super({ key: 'scene4' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneE'));
+        this.input.on('pointerdown', () => this.scene.start('scene5'));
     }
 }
 
-class SceneE extends Phaser.Scene
+class Scene5 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneE' });
+        super({ key: 'scene5' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneF'));
+        this.input.on('pointerdown', () => this.scene.start('scene6'));
     }
 }
 
-class SceneF extends Phaser.Scene
+class Scene6 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneF' });
+        super({ key: 'scene6' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+        this.input.on('pointerdown', () => this.scene.start('scene7'));
     }
 }
 
 
-class SceneG extends Phaser.Scene
+class Scene7 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneG' });
+        super({ key: 'scene7' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneH'));
+        this.input.on('pointerdown', () => this.scene.start('scene8'));
     }
 }
 
-class SceneH extends Phaser.Scene
+class Scene8 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneH' });
+        super({ key: 'scene8' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneI'));
+        this.input.on('pointerdown', () => this.scene.start('scene9'));
     }
 }
 
-class SceneI extends Phaser.Scene
+class Scene9 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneI' });
+        super({ key: 'scene9' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneJ'));
+        this.input.on('pointerdown', () => this.scene.start('scene10'));
     }
 }
 
-class SceneJ extends Phaser.Scene
+class Scene10 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneJ' });
+        super({ key: 'scene10' });
     }  
 
     create ()
     {
-        this.input.on('pointerdown', () => this.scene.start('sceneK'));
+        this.input.on('pointerdown', () => this.scene.start('scene11'));
     }
 }
 
 // victory screen
-class SceneK extends Phaser.Scene
+class Scene11 extends Phaser.Scene
 {
     constructor ()
     {
-        super({ key: 'sceneK' });
+        super({ key: 'scene11' });
     }  
 
     create ()
@@ -165,7 +165,7 @@ let config = {
         height: 1080,
     },
 
-    scene: [SceneA, SceneB, SceneC, SceneD, SceneE, SceneF, Scene G, Scene H, Scene I, Scene J, Scene K],
+    scene: [Scene1, Scene2, Scene3, Scene4, Scene5, Scene6, Scene7, Scene8, Scene9, Scene10, Scene11],
     title: "Prototype",
     physics: {
         default: 'arcade',
