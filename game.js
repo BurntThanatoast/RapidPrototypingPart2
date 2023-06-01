@@ -34,6 +34,11 @@ class Scene2 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`Watch out for slugs!
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene3'));
     }
 }
@@ -47,6 +52,11 @@ class Scene3 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`*Placeholder Scene for Gameplay
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene4'));
     }
 }
@@ -60,6 +70,11 @@ class Scene4 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`That's good work!
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene5'));
     }
 }
@@ -73,6 +88,11 @@ class Scene5 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`Watch out for snails!
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene6'));
     }
 }
@@ -86,6 +106,11 @@ class Scene6 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`*Placeholder Scene for Gameplay
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene7'));
     }
 }
@@ -100,6 +125,11 @@ class Scene7 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`Good job!
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene8'));
     }
 }
@@ -113,6 +143,11 @@ class Scene8 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`This is the last level!!
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene9'));
     }
 }
@@ -126,6 +161,11 @@ class Scene9 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`*Placeholder Scene for Gameplay
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene10'));
     }
 }
@@ -139,6 +179,11 @@ class Scene10 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`The roly poly gets a badge!
+
+Click anywhere to continue...`
+                );
         this.input.on('pointerdown', () => this.scene.start('scene11'));
     }
 }
@@ -153,6 +198,10 @@ class Scene11 extends Phaser.Scene
 
     create ()
     {
+        let box = this.add.text(10, 10,
+`*Placeholder Scene for Victory screen
+`
+                );
     }
 }
 
