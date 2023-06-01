@@ -1,4 +1,4 @@
-class SceneOne extends Phaser.Scene
+class SceneA extends Phaser.Scene
 {
     constructor ()
     {
@@ -15,7 +15,7 @@ class SceneOne extends Phaser.Scene
     {
         this.cameras.main.setBackgroundColor('#737373');
         this.add.text(90, 200, "Roly Poly: To the End", {color: '#FFFFFF'}).setFontSize(25);
-
+        this.input.on('pointerdown', () => this.scene.start('sceneB'));
         
     }
 
@@ -25,6 +25,86 @@ class SceneOne extends Phaser.Scene
     }
 }
 
+class SceneB extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneB' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneC'));
+    }
+}
+
+class SceneC extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneC' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneD'));
+    }
+}
+
+class SceneD extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneD' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneE'));
+    }
+}
+
+class SceneE extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneE' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneF'));
+    }
+}
+
+class SceneF extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneF' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+    }
+}
+
+//END SCREEN
+class SceneG extends Phaser.Scene
+{
+    constructor ()
+    {
+        super({ key: 'sceneF' });
+    }  
+
+    create ()
+    {
+        this.input.on('pointerdown', () => this.scene.start('sceneG'));
+    }
+}
+
+
 let config = {
     scale: {
         mode: Phaser.Scale.FIT,
@@ -33,7 +113,7 @@ let config = {
         height: 1080,
     },
 
-    scene: [SceneOne],
+    scene: [SceneA, SceneB, SceneC , SceneD, SceneE, SceneF, Scene G],
     title: "Prototype",
     physics: {
         default: 'arcade',
